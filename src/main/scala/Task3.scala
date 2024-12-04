@@ -1,9 +1,7 @@
 import scala.annotation.tailrec
-import scala.collection
 import scala.io.BufferedSource
 import scala.util.matching.Regex
 
-//TODO: package
 object Task3 {
   val mulPattern: Regex = """mul\((\d{1,3}),(\d{1,3})\)""".r
   val crossPattern: Regex = """(?:mul\((\d{1,3}),(\d{1,3})\)|do\(\)|don\'t\(\))""".r

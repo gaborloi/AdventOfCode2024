@@ -1,6 +1,5 @@
 import scala.io.BufferedSource
 
-//TODO: package
 object Task1 {
   def parseFile1(file: BufferedSource): Int = {
     val lines = file.getLines().toList

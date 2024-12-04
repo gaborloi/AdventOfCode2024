@@ -1,7 +1,6 @@
 import scala.annotation.tailrec
 import scala.io.BufferedSource
 
-//TODO: package
 object Task2 {
   def parseFile1(file: BufferedSource): Int = {
     file.getLines().count { line => evalReport(line.split(" ")) }
