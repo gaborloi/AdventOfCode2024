@@ -4,7 +4,7 @@ import scala.util.matching.Regex
 
 object Task3 {
   val mulPattern: Regex = """mul\((\d{1,3}),(\d{1,3})\)""".r
-  val crossPattern: Regex = """(?:mul\((\d{1,3}),(\d{1,3})\)|do\(\)|don\'t\(\))""".r
+  val crossPattern: Regex = """mul\((\d{1,3}),(\d{1,3})\)|do\(\)|don't\(\)""".r
   def parseFile1(file: BufferedSource): Int = {
     file.getLines().map(parseLine).sum()
   }
