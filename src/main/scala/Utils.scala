@@ -18,6 +18,8 @@ object Utils {
     def valid(maxRowIdx: Int, maxColIdx: Int): Boolean = (r <= maxRowIdx) && (c <= maxColIdx) && (r > -1) && (c > -1)
 
     def *(const: Int): Cord = Cord(r * const, c * const)
+    
+    def rotateRight(): Cord = Cord(c, -r) 
   }
 
 }
