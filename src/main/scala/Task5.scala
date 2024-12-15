@@ -1,7 +1,4 @@
-import Utils._
-
 import scala.annotation.tailrec
-import scala.collection.mutable.ListBuffer
 import scala.io.BufferedSource
 
 object Task5 {
